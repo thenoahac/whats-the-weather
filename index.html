@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>What's The Weather?</title>
 </head>
 <body>
     <header id="title">Your Local Weather Forcast</header>
 
-    <main class="container">
-        <div class="row">
-           <div class="col1">
-                <div id="search-sect">
-                    <h1 id="search-prompt">Look up your city:</h1>
-                    <form id="location-input">
-                        <input type="text" name="location-find" placeholder="Myrtle Beach" id="city-input"/>
-                        <button type="submit" class="button" id="search-button">Search</button>
-                    </form>
-                    <br>
-                    <div class="recent-searches"></div>
+    <main>
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-12 col-md-8 col-xl-9">
+                     <div id="search-sect">
+                         <h1 id="search-prompt">Look up your city:</h1>
+                         <form id="location-input">
+                             <input type="text" name="location-find" placeholder="Myrtle Beach" id="city-input"/>
+                             <button type="submit" class="button" id="search-button">Search</button>
+                         </form>
+                         <hr id="line-break">
+                         <div class="recent-searches"></div>
+                     </div>
                 </div>
-           </div>
-        </div>
-        <div class="col2">
-            <div id="current-forecast">
-                <h2 id="current-location">
-                    Myrtle Beach (7/08/2022)
-                </h2>
-                <ul>
-                    <li>Temperature: 0</li>
-                    <li>Wind: 0 MPH</li>
-                    <li>Humidity: 0%</li>
-                </ul>
-            </div>
-            <div id="weekly-forcast" class="spacearound row" ></div>
-        </div>
+             </div>
+             <div class="col-12 col-md-4 col-xl-3">
+                 <div id="current-forecast">
+                     <h2 id="current-location">
+                         Myrtle Beach (7/08/2022)
+                     </h2>
+                     <ul>
+                         <li>Temperature: 0</li>
+                         <li>Wind: 0 MPH</li>
+                         <li>Humidity: 0%</li>
+                     </ul>
+                 </div>
+                 <div id="weekly-forcast" class="spacearound row" ></div>
+             </div>
+        </section>
+        
+        
     </main>
-
-
 
 
 

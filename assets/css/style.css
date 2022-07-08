@@ -25,15 +25,10 @@ header {
     background-color: #264653;
 }
 
-.col1 {
-    margin: 0 auto;
-    width: 25%;
-}
 
-.col2 {
-    margin-top: 2%;
-    margin-right: auto;
-    width: 70%;
+#line-break {
+    border-top: 2px solid black;
+    padding-bottom: 10px;
 }
 
 #title {
