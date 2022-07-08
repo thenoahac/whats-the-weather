@@ -8,7 +8,26 @@
     <title>What's The Weather?</title>
 </head>
 <body>
-    <header id="header-title">Your Local Weather Forcast</header>
+    <header id="title">Your Local Weather Forcast</header>
+
+    <main class="container">
+        <div class="row">
+           <div class="col1">
+                <div id="search-sect">
+                    <h1 id="search-prompt">Look up your city:</h1>
+                    <form id="location-input">
+                        <input type="text" name="location-find" placeholder="Myrtle Beach" id="city-input"/>
+                        <button type="submit" class="button" id="search-button"></button>
+                    </form>
+                    <br>
+                    <div class="recent-searches"></div>
+                </div>
+           </div>
+        </div>
+        <div class="col12">
+            <div id="weekly-forcast" class="spacearound row" ></div>
+        </div>
+    </main>
 
 
 
