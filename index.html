@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What's The Weather</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href='style.css'>
+    <title>What's The Weather?</title>
 </head>
-<body>
-    <header>
-        <H1 class="text-center bg-dark text-light">What's The Weather?</H1>
-    </header>
 
-    <div class="container">
+<body>
+    <header class="heading">What's The Weather?</header>
+    <main id='container' class="container">
         <div class="row">
-            <div class="col-3 border">
-                <form>
-                    <div class="form-group">
-                        <br>
-                        <input placeholder="Search a City" type="text" class="form-control" id="searchCity">
-                    </div>
-                    <button id="search" type="submit" class="btn btn-primary bg-dark">Search</button>
-                </form>
-                <br>
-                <div>
-                    <h2>Search History</h2>
-                    <div class="container" id="sHistory"></div>
+            <div class="col1">
+                <div id='search-area'>
+                    <h1 class='h1'>Enter your desired City:</h1>
+                    <form id='city-search'>
+                        <input name='city' type="text" placeholder="Austin" id='city' autofocus='true'
+                            class='city-input' />
+                        <button type="submit" id='search-btn' class='btn'>Search</button>
+                    </form>
+                    <hr>
+                    </hr>
+                    <div id="search-history"></div>
                 </div>
             </div>
-            <div class="col-9 border">
-                <h2>Your Current Forecast</h2>
-                <div id="currentWeather"></div>
-                <br></br>
-                <h2>Forcast</h2>
-                <div class="row" id="forcast"></div>
-            </div> 
+            <div class="col2">
+                <div id='five-day' class='row spacebetween'></div>
+            </div>
         </div>
-    </div>
-    
+    </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    <script src="./assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src='script.js'></script>
+
 </body>
+
 </html>

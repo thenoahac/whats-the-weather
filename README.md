@@ -27,3 +27,7 @@ The Links below will take you to the Repository page for this challenge as well 
 -Thank you to Chris Le for talking about how to utilize bootstrap and explaining it to me!
 
 -Thank you to Annie Hosch on collabing with me on a general project structure
+
+-Thank you to Mark Fulton for helping me solve script issues and working with me for a long time to essentially reformat my entire code.
+
+-Thank you Gerry Mandell for helping me with my script issues and sitting down with me for a long time.
